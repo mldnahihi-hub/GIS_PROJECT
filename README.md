@@ -1,4 +1,4 @@
-# BÁO GIÁ DỰ ÁN GRS - HỆ THỐNG QUẢN LÝ TIỆN ÍCH GIS
+# HỆ THỐNG QUẢN LÝ TIỆN ÍCH GIS
 
 **Kính gửi:** Anh Dương Văn Tuấn  
 **Từ:** Lê Thái Anh - Founding Engineer | DNA TEAM
