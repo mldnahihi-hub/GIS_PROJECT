@@ -1,8 +1,8 @@
-# HỆ THỐNG QUẢN LÝ TIỆN ÍCH GIS
+# BÁO GIÁ DỰ ÁN GRS - HỆ THỐNG QUẢN LÝ TIỆN ÍCH GIS
 
-**Kính gửi:** Anh [Tên Khách Hàng]  
-**Từ:** Lê Thái Anh - Founding Engineer  
-**Ngày:** [Date]
+**Kính gửi:** Anh Dương Văn Tuấn  
+**Từ:** Lê Thái Anh - Founding Engineer | DNA TEAM
+**Ngày:** 28/01/2026
 
 ---
 
@@ -249,8 +249,8 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
 [⬆️ Về mục lục](#-mục-lục---nhảy-nhanh)
 
-### Gói A: Foundation - **25 triệu**
-*(Giảm 10tr - Vì anh là đối tác lâu dài)*
+### Gói A: Foundation - **25 triệu** *(Có thể thương lượng)*
+*(Giảm 10tr từ giá gốc 35tr - Vì anh là đối tác lâu dài)*
 
 **Bao gồm:** Module 1, 2, 3, 4  
 **Giải quyết:** 3 vấn đề lớn (Data leak, Google Maps cost, Performance)  
@@ -260,8 +260,8 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
 ---
 
-### Gói B: Advanced - **30 triệu**
-*(Giảm 5tr)*
+### Gói B: Advanced - **30 triệu** *(Có thể thương lượng)*
+*(Giảm 5tr từ giá gốc 35tr)*
 
 **Bao gồm:** Gói A + Module 5 + AI Assistant
 
@@ -329,15 +329,15 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 [⬆️ Về mục lục](#-mục-lục---nhảy-nhanh)
 
 ### Thanh toán:
-- **Cọc 50%** (12.5tr) → Thuê server, setup dev
-- **50% còn lại** → Khi bàn giao
+- **Cọc 50%** khi bắt đầu → Thuê server, setup dev
+- **50% còn lại** → Thương lượng sau (có thể chia nhỏ theo milestone hoặc khi bàn giao)
 
 ### Bàn giao:
 - ⏱️ **6 tuần** (Phase 1: 3 tuần Core, Phase 2: 3 tuần Polish & Deploy)
-  - *Tại sao 6 tuần?* Em còn maintain DNA Platform + Digital Twin Bot. Em không muốn rush và deliver chất lượng kém.
+  - *Tại sao 6 tuần?* Em còn maintain DNA Platform + Digital Twin Bot + working. Em không muốn rush và deliver chất lượng kém.
 - 📦 **Full source code** (GitHub private)
 - 📚 **Document** + Video demo
-- 🛠️ **Support** 1-3 tháng
+- 🛠️ **Support** 6 month
 
 ### Timeline chi tiết:
 
@@ -348,13 +348,9 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 | **5** | Frontend UI + Integration | Giao diện hoàn chỉnh, mượt mà | Như sơn tường, lắp đèn - nhà đẹp, sẵn sàng ở |
 | **6** | Testing + Bug fixes + Deployment | Hệ thống live, sẵn sàng dùng | Như dọn dẹp, bàn giao chìa khóa |
 
-**Tại sao 6 tuần?**
-- Em còn maintain DNA Platform + Digital Twin Bot
-- Em không muốn rush và deliver chất lượng kém
-- **Chất lượng > Tốc độ** - Làm đúng 1 lần tốt hơn sửa 10 lần
 
 ### Đảm bảo:
-- ✅ Em làm trực tiếp (không outsource)
+- ✅ Làm trực tiếp 60%, teamsize 3 person (không outsource)
 - ✅ Code quality cao (em đã build IaC SDK, DNA Platform)
 - ✅ Support sau bàn giao (không bỏ rơi)
 
@@ -362,11 +358,11 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
 <div id="tai-sao-chon-em"></div>
 
-## 🚀 TẠI SAO CHỌN EM?
+## 🚀 TẠI SAO CHỌN TEAM?
 
 [⬆️ Về mục lục](#-mục-lục---nhảy-nhanh)
 
-**Em không phải developer thuê ngoài.** Em là **Founding Engineer** với mindset:
+**không phải developer thuê ngoài.** I and my teams là **Founding Engineers** với mindset:
 
 1. **Hiểu business** - Không chỉ code, mà giải quyết vấn đề
 2. **Cost-conscious** - Tối ưu chi phí cho anh (Custom Map thay Google)
@@ -378,7 +374,5 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
 ---
 
-
 **Trân trọng,**  
-**Lê Thái Anh**  
-Founding Engineer | Principal Backend
+**Lê Thái Anh and My Team Members**
