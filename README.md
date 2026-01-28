@@ -183,7 +183,7 @@
 
 [⬆️ Về mục lục](#-mục-lục---nhảy-nhanh)
 
-Anh không cần **1 triệu users/giây**. Anh chỉ cần **100 users mượt mà**.
+Anh không cần **1 triệu users/giây**. Anh chỉ cần **100 users mượt mà, can scale 10k without charge cost cloud or any maintain from early**.
 
 **Em không dùng công nghệ "sang chảnh" để flex.** Em dùng công nghệ **"vừa đủ, đúng chỗ"**:
 
@@ -192,13 +192,13 @@ Anh không cần **1 triệu users/giây**. Anh chỉ cần **100 users mượt 
 | **WordPress** | Blog, landing page đơn giản | ❌ Không (cần Multi-tenancy) | Như mua đồ ăn sẵn siêu thị - nhanh nhưng không custom được |
 | **Microservice** | 1 triệu users, team 20+ người | ❌ Không (chỉ 100 users) | Như thuê 5 xe máy đi Hải Phòng - tốn kém và phức tạp |
 | **Kubernetes** | 1000 servers, auto-scale | ❌ Không (chỉ 1 server) | Như thuê hệ thống khách sạn 5 sao cho quán cà phê 20 bàn |
-| **Monolith + kvrock** | 100-1000 users, 1 server, nhanh | ✅ **Đúng** | Như thuê 1 xe ô tô - vừa đủ, hiệu quả, tiết kiệm |
+| **Monolith + kvrock** | 100-10k users, 1 server, nhanh | ✅ **Đúng** | Như thuê 1 xe ô tô - vừa đủ, hiệu quả, tiết kiệm |
 
 **Kết quả:**
 - ✅ Nhanh (kvrock inverted index - như có mục lục thư viện)
 - ✅ Rẻ (1 server thay vì 5 - như 1 xe thay vì 5 xe)
 - ✅ Đơn giản (không cần team lớn - như 1 tài xế thay vì 5)
-- ✅ Scale được (100 → 1000 users không cần refactor)
+- ✅ Scale được (100 → 10k users không cần refactor)
 
 **Đây là "moat" của em.** Không phải ai cũng biết khi nào dùng công nghệ nào. Em biết.
 
@@ -211,7 +211,7 @@ Khi anh trả 25 triệu, anh không mua code. **Anh mua:**
 | **1. Peace of mind** | Data không bao giờ leak | Như két sắt ngân hàng - an toàn tuyệt đối | Vô giá (tránh kiện tụng) |
 | **2. Cost savings** | Tiết kiệm 120tr/năm Google Maps | Như mua cốc sứ thay vì cốc giấy | 120tr/năm |
 | **3. Scalability** | Thêm 10 đối tác không cần refactor | Như xây nhà 3 tầng từ đầu, không phải đập xây lại | 50tr (chi phí refactor) |
-| **4. Performance** | 100 users đồng thời không lag | Như quán phở có 5 nồi, không để khách đợi | Doanh thu tăng 50% |
+| **4. Performance** | 100 - 10k users đồng thời không lag | Như quán phở có 5 nồi, không để khách đợi | Doanh thu tăng 50% |
 | **5. Ownership** | Full source code, không phụ thuộc vendor | Như mua nhà thay vì thuê - sở hữu mãi mãi | Vô giá |
 
 **Tổng giá trị thực:** 120tr/năm + 50tr + tăng doanh thu = **Hơn 200 triệu**
@@ -236,7 +236,7 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 |:--|:-------|:----------------------|:--------|:---------------|:---------------|
 | **1** | **Multi-tenancy Core** | Data không leak giữa partners | **8tr** | Kiện tụng, mất khách | Như xây tường ngăn giữa các phòng - không ai nhìn thấy đồ của nhau |
 | **2** | **Custom Map Engine**<br>*Powered by kvrock inverted index* | Thoát Google Maps API<br>Tìm kiếm nhanh gấp 100x | **10tr** | Tốn 120tr/năm | Như có mục lục thư viện - tìm sách trong 5 giây thay vì 2 giờ |
-| **3** | **Optimized Frontend** | 100 users không lag | **7tr** | Users complain, chậm | Như mở rộng cửa hàng - 100 khách vào cùng lúc không chen lấn |
+| **3** | **Optimized Frontend** | 100 - 10k users không lag | **7tr** | Users complain, chậm | Như mở rộng cửa hàng - 100 khách vào cùng lúc không chen lấn |
 | **4** | **Cloud Infrastructure** | Uptime 99.9%, bảo mật | **5tr** | Downtime, mất data | Như thuê bảo vệ 24/7 - cửa hàng luôn mở, không bị trộm |
 | **5** | **Live Tracking + AI Agentic**<br>*Test tại twitch.tv/thaianh_python* | Alert tức thì, giảm training | **5tr** | Phát hiện sự cố chậm | Như có trợ lý thông minh - nhân viên hỏi gì cũng trả lời ngay |
 | | **TỔNG** | | **35tr** | | |
