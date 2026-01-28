@@ -1,188 +1,5 @@
 # BÁO GIÁ DỰ ÁN GRS - HỆ THỐNG QUẢN LÝ TIỆN ÍCH GIS
 
-<style>
-/* Modern Landing Page Styling */
-:root {
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --success: #10b981;
-  --danger: #ef4444;
-  --warning: #f59e0b;
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-800: #1f2937;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-/* Table Styling */
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 20px 0;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-thead {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  color: white;
-}
-
-thead th {
-  padding: 16px;
-  font-weight: 600;
-  text-align: left;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-tbody tr {
-  border-bottom: 1px solid var(--gray-200);
-  transition: all 0.3s ease;
-}
-
-tbody tr:hover {
-  background: var(--gray-50);
-  transform: scale(1.01);
-  box-shadow: var(--shadow);
-}
-
-tbody tr:last-child {
-  border-bottom: none;
-}
-
-tbody td {
-  padding: 16px;
-  font-size: 14px;
-  color: var(--gray-800);
-}
-
-/* Highlight important rows */
-tbody tr:has(td:first-child strong) {
-  background: linear-gradient(90deg, #fef3c7 0%, #fef9e7 100%);
-  font-weight: 600;
-}
-
-/* Price cells */
-td:has(strong:contains("tr")) {
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 16px;
-}
-
-/* Section Boxes */
-div[style*="background"] {
-  background: linear-gradient(135deg, var(--gray-50) 0%, white 100%) !important;
-  border-left: 4px solid var(--primary);
-  box-shadow: var(--shadow);
-  transition: all 0.3s ease;
-}
-
-div[style*="background"]:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-}
-
-/* Checkmarks and X marks */
-td:contains("✅") {
-  color: var(--success);
-  font-weight: 600;
-}
-
-td:contains("❌") {
-  color: var(--danger);
-  font-weight: 600;
-}
-
-/* Scrollable tables */
-div[style*="overflow-x"] {
-  border-radius: 12px;
-  box-shadow: var(--shadow-lg);
-  background: white;
-  padding: 0 !important;
-}
-
-/* Links */
-a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-a:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
-}
-
-/* Back to top links */
-a[href*="mục-lục"] {
-  display: inline-block;
-  padding: 8px 16px;
-  background: var(--gray-100);
-  border-radius: 20px;
-  font-size: 13px;
-  margin: 10px 0;
-  transition: all 0.3s ease;
-}
-
-a[href*="mục-lục"]:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
-
-/* Headings */
-h2 {
-  color: var(--gray-800);
-  border-bottom: 3px solid var(--primary);
-  padding-bottom: 10px;
-  margin-top: 40px;
-}
-
-h3 {
-  color: var(--primary-dark);
-  margin-top: 30px;
-}
-
-/* Code blocks */
-code {
-  background: var(--gray-100);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 13px;
-  color: var(--danger);
-}
-
-/* Blockquotes */
-blockquote {
-  border-left: 4px solid var(--warning);
-  background: #fffbeb;
-  padding: 16px;
-  margin: 20px 0;
-  border-radius: 0 8px 8px 0;
-  font-style: italic;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  table {
-    font-size: 12px;
-  }
-  
-  thead th, tbody td {
-    padding: 12px 8px;
-  }
-}
-</style>
-
 **Kính gửi:** Anh [Tên Khách Hàng]  
 **Từ:** Lê Thái Anh - Founding Engineer  
 **Ngày:** [Date]
@@ -370,37 +187,12 @@ Anh không cần **1 triệu users/giây**. Anh chỉ cần **100 users mượt 
 
 **Em không dùng công nghệ "sang chảnh" để flex.** Em dùng công nghệ **"vừa đủ, đúng chỗ"**:
 
-<div class="tech-comparison">
-
 | Công nghệ | Khi nào dùng? | Anh có cần không? | Ví dụ đời sống |
 |:----------|:--------------|:------------------|:---------------|
 | **WordPress** | Blog, landing page đơn giản | ❌ Không (cần Multi-tenancy) | Như mua đồ ăn sẵn siêu thị - nhanh nhưng không custom được |
 | **Microservice** | 1 triệu users, team 20+ người | ❌ Không (chỉ 100 users) | Như thuê 5 xe máy đi Hải Phòng - tốn kém và phức tạp |
 | **Kubernetes** | 1000 servers, auto-scale | ❌ Không (chỉ 1 server) | Như thuê hệ thống khách sạn 5 sao cho quán cà phê 20 bàn |
 | **Monolith + kvrock** | 100-1000 users, 1 server, nhanh | ✅ **Đúng** | Như thuê 1 xe ô tô - vừa đủ, hiệu quả, tiết kiệm |
-
-</div>
-
-<style>
-.tech-comparison {
-  overflow-x: auto;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-}
-
-.tech-comparison tbody tr:has(td:contains("❌")) {
-  background: linear-gradient(90deg, #fef2f2 0%, #ffffff 100%);
-  opacity: 0.7;
-}
-
-.tech-comparison tbody tr:has(td:contains("✅")) {
-  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-  font-weight: 700;
-  border: 3px solid #10b981;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-}
-</style>
 
 **Kết quả:**
 - ✅ Nhanh (kvrock inverted index - như có mục lục thư viện)
@@ -414,8 +206,6 @@ Anh không cần **1 triệu users/giây**. Anh chỉ cần **100 users mượt 
 
 Khi anh trả 25 triệu, anh không mua code. **Anh mua:**
 
-<div class="value-table">
-
 | Giá trị | Mô tả | Ví dụ đời sống | Giá trị thực |
 |:--------|:------|:---------------|:-------------|
 | **1. Peace of mind** | Data không bao giờ leak | Như két sắt ngân hàng - an toàn tuyệt đối | Vô giá (tránh kiện tụng) |
@@ -423,35 +213,6 @@ Khi anh trả 25 triệu, anh không mua code. **Anh mua:**
 | **3. Scalability** | Thêm 10 đối tác không cần refactor | Như xây nhà 3 tầng từ đầu, không phải đập xây lại | 50tr (chi phí refactor) |
 | **4. Performance** | 100 users đồng thời không lag | Như quán phở có 5 nồi, không để khách đợi | Doanh thu tăng 50% |
 | **5. Ownership** | Full source code, không phụ thuộc vendor | Như mua nhà thay vì thuê - sở hữu mãi mãi | Vô giá |
-
-</div>
-
-<style>
-.value-table {
-  overflow-x: auto;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}
-
-.value-table table {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-  padding: 3px;
-}
-
-.value-table thead {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-}
-
-.value-table tbody tr {
-  background: linear-gradient(90deg, #fffbeb 0%, #ffffff 100%);
-}
-
-.value-table tbody tr:hover {
-  background: linear-gradient(90deg, #fef3c7 0%, #fef9e7 100%);
-  transform: scale(1.02);
-}
-</style>
 
 **Tổng giá trị thực:** 120tr/năm + 50tr + tăng doanh thu = **Hơn 200 triệu**
 
@@ -471,8 +232,6 @@ Khi anh trả 25 triệu, anh không mua code. **Anh mua:**
 
 Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
-<div class="pricing-table">
-
 | # | Module | Giải quyết vấn đề gì? | Giá trị | Nếu không làm? | Ví dụ đời sống |
 |:--|:-------|:----------------------|:--------|:---------------|:---------------|
 | **1** | **Multi-tenancy Core** | Data không leak giữa partners | **8tr** | Kiện tụng, mất khách | Như xây tường ngăn giữa các phòng - không ai nhìn thấy đồ của nhau |
@@ -481,40 +240,6 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 | **4** | **Cloud Infrastructure** | Uptime 99.9%, bảo mật | **5tr** | Downtime, mất data | Như thuê bảo vệ 24/7 - cửa hàng luôn mở, không bị trộm |
 | **5** | **Live Tracking + AI Agentic**<br>*Test tại twitch.tv/thaianh_python* | Alert tức thì, giảm training | **5tr** | Phát hiện sự cố chậm | Như có trợ lý thông minh - nhân viên hỏi gì cũng trả lời ngay |
 | | **TỔNG** | | **35tr** | | |
-
-</div>
-
-<style>
-.pricing-table {
-  overflow-x: auto;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.pricing-table table {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 2px;
-}
-
-.pricing-table thead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.pricing-table tbody tr:nth-child(odd) {
-  background: linear-gradient(90deg, #f8fafc 0%, #ffffff 100%);
-}
-
-.pricing-table tbody tr:nth-child(even) {
-  background: linear-gradient(90deg, #ffffff 0%, #f8fafc 100%);
-}
-
-.pricing-table tbody tr:last-child {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  font-weight: 700;
-  font-size: 16px;
-}
-</style>
 
 ---
 
@@ -581,38 +306,11 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
 ### So sánh thực tế:
 
-<div class="comparison-table">
-
 | Phương án | Giá | Rủi ro | Chi phí hàng năm | Ví dụ đời sống |
 |:----------|:----|:-------|:-----------------|:---------------|
 | **Agency** | 50-80tr | Không có source code | +20-30tr maintenance | Như thuê nhà - trả tiền mãi, không bao giờ sở hữu |
 | **Freelancer rẻ** | 10-15tr | Data leak, lag, không support | +120tr Google Maps | Như mua xe cũ giá rẻ - sửa hoài, tốn xăng, cuối cùng tốn hơn xe mới |
 | **Em làm** | **25tr** | ✅ Không | ✅ Tiết kiệm 120tr/năm | Như mua nhà trả góp - ban đầu hơi cao nhưng về lâu dài tiết kiệm |
-
-</div>
-
-<style>
-.comparison-table {
-  overflow-x: auto;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.comparison-table tbody tr:nth-child(1) {
-  background: linear-gradient(90deg, #fee2e2 0%, #fef2f2 100%);
-}
-
-.comparison-table tbody tr:nth-child(2) {
-  background: linear-gradient(90deg, #fef3c7 0%, #fef9e7 100%);
-}
-
-.comparison-table tbody tr:nth-child(3) {
-  background: linear-gradient(90deg, #d1fae5 0%, #ecfdf5 100%);
-  font-weight: 700;
-  border: 2px solid #10b981;
-}
-</style>
 
 **ROI:** Payback trong 2-3 tháng (chỉ tính Google Maps savings)
 
@@ -643,42 +341,12 @@ Bây giờ em chia nhỏ để anh thấy rõ từng phần:
 
 ### Timeline chi tiết:
 
-<div class="timeline-table">
-
 | Tuần | Công việc | Deliverable | Ví dụ đời sống |
 |:-----|:----------|:------------|:---------------|
 | **1-2** | Backend Core + Multi-tenancy + Database | API hoàn chỉnh, data an toàn | Như xây móng nhà - không thấy nhưng quan trọng nhất |
 | **3-4** | GIS Map Engine + Custom Rendering | Map hiển thị, tìm kiếm nhanh | Như lắp cửa sổ - bắt đầu thấy hình dáng ngôi nhà |
 | **5** | Frontend UI + Integration | Giao diện hoàn chỉnh, mượt mà | Như sơn tường, lắp đèn - nhà đẹp, sẵn sàng ở |
 | **6** | Testing + Bug fixes + Deployment | Hệ thống live, sẵn sàng dùng | Như dọn dẹp, bàn giao chìa khóa |
-
-</div>
-
-<style>
-.timeline-table {
-  overflow-x: auto;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-}
-
-.timeline-table tbody tr:nth-child(1) {
-  background: linear-gradient(90deg, #dbeafe 0%, #eff6ff 100%);
-}
-
-.timeline-table tbody tr:nth-child(2) {
-  background: linear-gradient(90deg, #e0e7ff 0%, #eef2ff 100%);
-}
-
-.timeline-table tbody tr:nth-child(3) {
-  background: linear-gradient(90deg, #fce7f3 0%, #fdf2f8 100%);
-}
-
-.timeline-table tbody tr:nth-child(4) {
-  background: linear-gradient(90deg, #d1fae5 0%, #ecfdf5 100%);
-  font-weight: 700;
-}
-</style>
 
 **Tại sao 6 tuần?**
 - Em còn maintain DNA Platform + Digital Twin Bot
